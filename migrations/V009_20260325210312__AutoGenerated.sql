@@ -1,0 +1,12 @@
+﻿SET NUMERIC_ROUNDABORT OFF
+GO
+SET ANSI_PADDING, ANSI_WARNINGS, CONCAT_NULL_YIELDS_NULL, ARITHABORT, QUOTED_IDENTIFIER, ANSI_NULLS ON
+GO
+PRINT N'Altering [dbo].[Territories]'
+GO
+ALTER TABLE [dbo].[Territories] ADD
+[foo2] [nchar] (10) NULL,
+[foo3] [nchar] (10) NULL,
+[foo4] [nchar] (10) NULL
+GO
+
