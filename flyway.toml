@@ -121,3 +121,6 @@ transportClrDataTypesAsBinary = false
 [environments.development]
 url = "jdbc:sqlserver://northwind-redgate.database.windows.net:1433;databaseName=northwind_dev;encrypt=true;hostNameInCertificate=*.database.windows.net;loginTimeout=30;trustServerCertificate=true"
 displayName = "Development database"
+
+[environments.prod]
+url = "jdbc:sqlserver://northwind-redgate.database.windows.net:1433;databaseName=northwind_prod;encrypt=true;hostNameInCertificate=*.database.windows.net;loginTimeout=30;trustServerCertificate=true"
