@@ -10,7 +10,8 @@ CREATE TABLE [dbo].[Vendors]
 [PostalCode] [nvarchar] (10) NULL,
 [Country] [nvarchar] (15) NULL,
 [Phone] [nvarchar] (24) NULL,
-[Fax] [nvarchar] (24) NULL
+[Fax] [nvarchar] (24) NULL,
+[Foo] [nvarchar] (24) NULL
 )
 GO
 ALTER TABLE [dbo].[Vendors] ADD CONSTRAINT [PK_Vendors] PRIMARY KEY CLUSTERED ([VendorID])
