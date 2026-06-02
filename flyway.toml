@@ -119,12 +119,19 @@ skipIntegrityChecksForForeignKeys = false
 transportClrDataTypesAsBinary = false
 
 [environments.development]
-url = "jdbc:sqlserver://northwind-redgate.database.windows.net:1433;authentication=sqlPassword;databaseName=northwind_dev;encrypt=true;hostNameInCertificate=*.database.windows.net;loginTimeout=30;trustServerCertificate=true"
+url = "jdbc:sqlserver://20.240.217.15:1433;authentication=sqlPassword;databaseName=northwind_dev;encrypt=true;hostNameInCertificate=*.database.windows.net;loginTimeout=30;trustServerCertificate=true"
 user = "Redgate"
 password = "Redg@te1"
 displayName = "Development database"
 
 [environments.prod]
-url = "jdbc:sqlserver://northwind-redgate.database.windows.net:1433;databaseName=northwind_prod;encrypt=true;hostNameInCertificate=*.database.windows.net;loginTimeout=30;trustServerCertificate=false"
+url = "jdbc:sqlserver://20.240.217.15:1433;databaseName=northwind_prod;encrypt=true;hostNameInCertificate=*.database.windows.net;loginTimeout=30;trustServerCertificate=true"
 user = "Redgate"
 password = "Redg@te1"
+
+[environments.shadow]
+url = "jdbc:sqlserver://20.240.217.15;authentication=sqlPassword;databaseName=northwind_shadow;encrypt=mandatory;trustServerCertificate=true"
+user = "Redgate"
+password = "Redg@te1"
+displayName = "Shadow database"
+provisioner = "clean"
